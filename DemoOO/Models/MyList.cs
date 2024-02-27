@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DemoOO.Models
 {
-    internal class Moto : Vehicule
+    internal class MyList
     {
-        public override int NbRoue { get => base.NbRoue; set => base.NbRoue = value; }
+        
+
+        
     }
 }

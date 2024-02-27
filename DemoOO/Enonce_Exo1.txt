@@ -17,3 +17,73 @@ Chaque personnage sera définie par
 Si guerrier => Force et Endurance + 3
 Si pretre => Sagesse +4 Intel + 2
 Si mage => Intel + 4 Sagesse + 2
+
+
+
+
+---------------------------
+
+Héritage
+
+Appliquer les concepts d'héritages pour éviter la redondance de code
+
+Ajouter une classe Personnage qui sera la super classe dans notre jeu
+
+
+----------------------------
+
+Polymorphisme
+
+
+Creér 3 monstres différents 
+
+Chaque monstre à une force et une endurance
+
+Goblin (-1for)
+	Coup de masse
+
+
+Loup(+2for, +1endu)
+	Morsure
+	Hurlement
+
+
+Orc(+3 for, +2endu)
+	Coup de hache
+	Cri de guerre ("Encore du travail")
+
+
+Créer une liste de 10 monstres de type aléatoire
+1 chance sur 2 de croiser un goblin
+1 chance sur 3 de croiser un loup
+1 chance sur 6 de croiser un orc
+
+
+Afficher la liste des monstre avec leur carac ainsi que leur compétences
+++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

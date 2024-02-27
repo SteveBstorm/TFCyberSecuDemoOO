@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DemoOO.Models
 {
-    public class Voiture
+    public class Voiture : Vehicule
     {
         /*
          prop => public int MyProperty{get; set;}
@@ -27,16 +27,11 @@ namespace DemoOO.Models
         au travers du get (accesseur) et du set (mutateur)
          */
 
+        public int MyProperty { get; set; }
 
 
-        public string Couleur { get; set; }
+
         
-        private string _modele;
-        public string Modele
-        {
-            get { return _modele.ToUpper(); }
-            set { _modele = value; }
-        }
 
         //private int _end;
 
@@ -72,6 +67,7 @@ namespace DemoOO.Models
             }
         }
 
+
         #region Exemple OLD voir Tres old school
         //private double Prix;
 
@@ -103,7 +99,17 @@ namespace DemoOO.Models
             if(couleur == "Violet")
                 Console.WriteLine("Couleur inexistante");
             Couleur = couleur;
+
+            Console.WriteLine(this.Couleur);
         }
+
+        public override void SeDeplacer()
+        {
+            base.SeDeplacer();
+            Console.WriteLine($"Je suis une voiture {Couleur} et je roule");
+        }
+
+
 
     }
 }
